@@ -12,8 +12,8 @@ const PALETTES = {
     "--c-saffron": "#FF6B00",
     "--c-gold":    "#C8860A",
     "--c-maroon":  "#4A0E0E",
-    "--c-bg":      "#FFF8E7",
-    "--c-grid":    "#C8860A22",
+    "--c-bg":      "#FDF0D5",
+    "--c-grid":    "#C8860A30",
   },
   // Seasonal
   summer: {
@@ -25,8 +25,8 @@ const PALETTES = {
     "--c-saffron": "#FF8C00",
     "--c-gold":    "#FFA500",
     "--c-maroon":  "#8B4513",
-    "--c-bg":      "#FFFBF0",
-    "--c-grid":    "#FFA50022",
+    "--c-bg":      "#FEF0D0",
+    "--c-grid":    "#FFA50032",
   },
   monsoon: {
     "--r-outer":   "#2E7D32",
@@ -37,8 +37,8 @@ const PALETTES = {
     "--c-saffron": "#388E3C",
     "--c-gold":    "#66BB6A",
     "--c-maroon":  "#1B5E20",
-    "--c-bg":      "#F1F8E9",
-    "--c-grid":    "#388E3C22",
+    "--c-bg":      "#D8EED8",
+    "--c-grid":    "#388E3C32",
   },
   autumn: {
     "--r-outer":   "#E65100",
@@ -49,8 +49,8 @@ const PALETTES = {
     "--c-saffron": "#E65100",
     "--c-gold":    "#F57C00",
     "--c-maroon":  "#4E342E",
-    "--c-bg":      "#FFF3E0",
-    "--c-grid":    "#F57C0022",
+    "--c-bg":      "#FCE5C8",
+    "--c-grid":    "#F57C0032",
   },
   winter: {
     "--r-outer":   "#1565C0",
@@ -61,8 +61,8 @@ const PALETTES = {
     "--c-saffron": "#1565C0",
     "--c-gold":    "#42A5F5",
     "--c-maroon":  "#0D47A1",
-    "--c-bg":      "#E3F2FD",
-    "--c-grid":    "#1976D222",
+    "--c-bg":      "#CDDFF5",
+    "--c-grid":    "#1976D232",
   },
   // Festival palettes
   navratri: {
@@ -74,8 +74,8 @@ const PALETTES = {
     "--c-saffron": "#C62828",
     "--c-gold":    "#E91E63",
     "--c-maroon":  "#880E4F",
-    "--c-bg":      "#FCE4EC",
-    "--c-grid":    "#E91E6322",
+    "--c-bg":      "#F9D0DF",
+    "--c-grid":    "#E91E6332",
   },
   diwali: {
     "--r-outer":   "#FF6F00",   // deep amber
@@ -86,8 +86,8 @@ const PALETTES = {
     "--c-saffron": "#FF6F00",
     "--c-gold":    "#FFA000",
     "--c-maroon":  "#BF360C",
-    "--c-bg":      "#FFF8E1",
-    "--c-grid":    "#FFA00022",
+    "--c-bg":      "#FDEFC0",
+    "--c-grid":    "#FFA00032",
   },
   uttarayan: {
     "--r-outer":   "#0288D1",   // kite blue sky
@@ -98,8 +98,8 @@ const PALETTES = {
     "--c-saffron": "#0288D1",
     "--c-gold":    "#80D8FF",
     "--c-maroon":  "#01579B",
-    "--c-bg":      "#E1F5FE",
-    "--c-grid":    "#039BE522",
+    "--c-bg":      "#C8E8FA",
+    "--c-grid":    "#039BE532",
   },
   ganesh: {
     "--r-outer":   "#F57F17",   // turmeric orange
@@ -110,8 +110,8 @@ const PALETTES = {
     "--c-saffron": "#F57F17",
     "--c-gold":    "#FB8C00",
     "--c-maroon":  "#E65100",
-    "--c-bg":      "#FFFDE7",
-    "--c-grid":    "#FB8C0022",
+    "--c-bg":      "#FEF5B0",
+    "--c-grid":    "#FB8C0032",
   },
   holi: {
     "--r-outer":   "#E040FB",   // festival purple
@@ -122,8 +122,8 @@ const PALETTES = {
     "--c-saffron": "#E040FB",
     "--c-gold":    "#FFEB3B",
     "--c-maroon":  "#6A1B9A",
-    "--c-bg":      "#F3E5F5",
-    "--c-grid":    "#E040FB22",
+    "--c-bg":      "#EAD0F5",
+    "--c-grid":    "#E040FB32",
   },
   ekadashi: {
     "--r-outer":   "#B0BEC5",   // silver-white calm
@@ -134,8 +134,8 @@ const PALETTES = {
     "--c-saffron": "#78909C",
     "--c-gold":    "#90A4AE",
     "--c-maroon":  "#546E7A",
-    "--c-bg":      "#FAFAFA",
-    "--c-grid":    "#90A4AE22",
+    "--c-bg":      "#E8ECEE",
+    "--c-grid":    "#90A4AE32",
   },
   purnima: {
     "--r-outer":   "#E1BEE7",   // moonlight lavender
@@ -146,8 +146,8 @@ const PALETTES = {
     "--c-saffron": "#9C27B0",
     "--c-gold":    "#AB47BC",
     "--c-maroon":  "#6A1B9A",
-    "--c-bg":      "#F3E5F5",
-    "--c-grid":    "#AB47BC22",
+    "--c-bg":      "#E5D0F0",
+    "--c-grid":    "#AB47BC32",
   },
   paryushana: {
     "--r-outer":   "#A5D6A7",   // gentle green — ahimsa
@@ -158,8 +158,8 @@ const PALETTES = {
     "--c-saffron": "#388E3C",
     "--c-gold":    "#4CAF50",
     "--c-maroon":  "#1B5E20",
-    "--c-bg":      "#F1F8E9",
-    "--c-grid":    "#4CAF5022",
+    "--c-bg":      "#D0EBD2",
+    "--c-grid":    "#4CAF5032",
   },
   adhikmaas: {
     "--r-outer":   "#7E57C2",   // deep violet — extra auspicious month
@@ -170,8 +170,8 @@ const PALETTES = {
     "--c-saffron": "#7E57C2",
     "--c-gold":    "#9575CD",
     "--c-maroon":  "#311B92",
-    "--c-bg":      "#EDE7F6",
-    "--c-grid":    "#9575CD22",
+    "--c-bg":      "#DDD0F5",
+    "--c-grid":    "#9575CD32",
   },
 };
 

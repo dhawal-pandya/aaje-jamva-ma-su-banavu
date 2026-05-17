@@ -152,10 +152,10 @@
   </style>
 </head>
 
-<body class="min-h-screen flex flex-col items-center justify-center px-4 py-10 select-none">
+<body class="min-h-screen relative flex flex-col items-center justify-center px-4 py-10 select-none">
 
-  <!-- Ganesh invocation — full width, always on top -->
-  <p class="devanagari text-sm tracking-widest opacity-50 mb-3"
+  <!-- Ganesh invocation — pinned to very top, outside flow -->
+  <p class="devanagari text-base tracking-widest opacity-60 absolute top-5 left-0 right-0 text-center"
      style="color: var(--c-maroon)">
     ॥ श्री गणेशाय नमः ॥
   </p>
@@ -287,7 +287,7 @@
 
       <!-- Context line: season · occasion · meal -->
       <p id="context-line"
-         class="text-xs mt-1 tracking-widest opacity-25"
+         class="text-sm mt-3 tracking-widest opacity-60 font-semibold"
          style="color: var(--c-maroon)">
       </p>
 
