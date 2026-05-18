@@ -149,127 +149,6 @@
     .rangoli-wrap {
       filter: drop-shadow(0 0 14px color-mix(in srgb, var(--r-outer) 28%, transparent));
     }
-
-    /* ── info button ── */
-    #info-btn {
-      position: fixed;
-      bottom: 1.25rem;
-      right: 1.25rem;
-      width: 2rem;
-      height: 2rem;
-      background: none;
-      border: 2px solid var(--c-gold);
-      color: var(--c-maroon);
-      font-family: 'Noto Sans Gujarati', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 700;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0.45;
-      border-radius: 3px;
-      transition: opacity 0.2s ease;
-      z-index: 40;
-    }
-    #info-btn::after {
-      content: '';
-      position: absolute;
-      inset: 3px;
-      border: 1px solid var(--c-gold);
-      border-radius: 1px;
-      opacity: 0.4;
-    }
-    #info-btn:hover { opacity: 0.85; }
-
-    /* ── info modal overlay ── */
-    #info-modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.38);
-      z-index: 50;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.28s ease;
-    }
-    #info-modal.open {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    /* ── info panel ── */
-    #info-panel {
-      width: 90vw;
-      height: 90vh;
-      background: var(--c-bg);
-      background: color-mix(in srgb, var(--c-bg) 88%, transparent);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1.5px solid color-mix(in srgb, var(--c-gold) 35%, transparent);
-      border-radius: 3px;
-      overflow-y: auto;
-      padding: 2.5rem 3rem;
-      position: relative;
-      box-shadow: 0 8px 48px rgba(0,0,0,0.18);
-      transform: translateY(16px);
-      transition: transform 0.28s ease;
-    }
-    #info-modal.open #info-panel {
-      transform: translateY(0);
-    }
-
-    .info-section { margin-bottom: 2rem; }
-    .info-section h2 {
-      font-size: 0.65rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      opacity: 0.45;
-      margin-bottom: 0.6rem;
-      color: var(--c-maroon);
-    }
-    .info-section p, .info-section li {
-      font-size: 0.92rem;
-      line-height: 1.75;
-      color: var(--c-maroon);
-      opacity: 0.8;
-    }
-    .info-section ul { padding-left: 1.2rem; list-style: none; }
-    .info-section ul li::before { content: '·  '; opacity: 0.5; }
-    .info-divider {
-      border: none;
-      border-top: 1px solid color-mix(in srgb, var(--c-gold) 30%, transparent);
-      margin: 1.75rem 0;
-    }
-    .info-title-gu {
-      font-size: 1.5rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--c-maroon) 0%, var(--c-saffron) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 0.25rem;
-    }
-    .info-title-en {
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      opacity: 0.4;
-      color: var(--c-maroon);
-      margin-bottom: 2rem;
-    }
-    .info-tag {
-      display: inline-block;
-      font-size: 0.7rem;
-      letter-spacing: 0.08em;
-      padding: 0.15rem 0.5rem;
-      border: 1px solid color-mix(in srgb, var(--c-gold) 40%, transparent);
-      border-radius: 2px;
-      color: var(--c-maroon);
-      opacity: 0.6;
-      margin: 0.15rem 0.15rem 0.15rem 0;
-    }
   </style>
 </head>
 
@@ -412,15 +291,22 @@
          style="color: var(--c-maroon)">
       </p>
 
-      <!-- Dish result -->
+     <!-- Dish result -->
       <div id="result" class="mt-8 text-center w-full max-w-md px-2">
         <!-- Gujarati name — big, primary -->
         <p id="dish-name-gu"
            class="dish-name-gu text-[2.75rem] sm:text-[3.5rem] lg:text-[4rem] font-bold leading-snug"></p>
+        
         <!-- English name — small, secondary -->
         <p id="dish-name-en"
            class="text-sm sm:text-base lg:text-lg mt-1 font-semibold opacity-50"
            style="color: var(--c-maroon)"></p>
+           
+        <!-- Ingredients -->
+        <p id="dish-ingredients"
+           class="text-sm sm:text-base mt-4 font-medium opacity-80 leading-relaxed max-w-[90%] mx-auto"
+           style="color: var(--c-maroon)"></p>
+
         <!-- Note -->
         <p id="dish-note"
            class="text-base lg:text-lg mt-3 opacity-50 italic leading-relaxed"
@@ -433,115 +319,6 @@
 
   <!-- footer -->
   <p class="devanagari opacity-20 text-base mt-12" style="color: var(--c-maroon)">✦ ✦ ✦</p>
-
-  <!-- ─── Info button ──────────────────────────────────────────────── -->
-  <button id="info-btn" aria-label="How it works" title="How it works">?</button>
-
-  <!-- ─── Info modal ───────────────────────────────────────────────── -->
-  <div id="info-modal" role="dialog" aria-modal="true" aria-label="How this works">
-    <div id="info-panel">
-
-      <p class="info-title-gu">HOW THE SUGGESTION WORKS</p>
-
-      <div class="info-section">
-        <p>Each time you press, the app looks at three things: what time of day it is, what season we're in, and what the Panchang says about today. It scores all the dishes against that context and gives you the best fit first. Press again to walk through the rest of the list.</p>
-      </div>
-
-      <hr class="info-divider">
-
-      <div class="info-section">
-        <h2>સમય · Time of Day</h2>
-        <ul>
-          <li><strong>Morning</strong> (6–10am): lighter beginnings: thepla, poha, upma, dhokla, handvo</li>
-          <li><strong>Lunch</strong> (10am–2pm): the main meal: dal, rotla, rice dishes, sabji, kadhi khichdi</li>
-          <li><strong>Snack</strong> (2–5pm): the something-small hour: chakli, muthiya, fafda, samosa</li>
-          <li><strong>Dinner</strong> (after 5pm): nourishing and quieter: khichdi, dal dhokli, rotla with ghee</li>
-        </ul>
-      </div>
-
-      <hr class="info-divider">
-
-      <div class="info-section">
-        <h2>ઋતુ · Season — Ritucharya</h2>
-        <p style="margin-bottom:0.75rem">The Ayurvedic tradition of eating with the seasons shapes the core of the scoring.</p>
-        <ul>
-          <li><strong>Summer</strong> (March–May): cooling dishes rise: dahi chawal, chaas, amrakhand. Amrakhand only appears in April–June when Alphonso mangoes are actually in season.</li>
-          <li><strong>Monsoon</strong> (June–September): steamed and easily digestible: dhokla, muthiya, khichdi. Leafy greens are nudged down: they attract insects in the rains and are harder on digestion.</li>
-          <li><strong>Autumn</strong> (October–November): the harvest bridge. Lighter than summer, richer than monsoon.</li>
-          <li><strong>Winter</strong> (December–February): warming and nourishing: bajra rotla, undhiyu, adadiya pak, methi thepla.</li>
-        </ul>
-      </div>
-
-      <hr class="info-divider">
-
-      <div class="info-section">
-        <h2>પંચાંગ · Panchang</h2>
-        <p style="margin-bottom:0.75rem">The lunar tithi is calculated fresh each time.</p>
-        <ul>
-          <li><strong>Ekadashi</strong> (11th tithi): all grains and pulses are removed. Only sabudana, dairy, and satvic light dishes remain.</li>
-          <li><strong>Purnima</strong> (full moon): lighter and satvic. The body is said to absorb everything more intensely on this day.</li>
-          <li><strong>Amavasya</strong> (new moon): no fried or rajasic food.</li>
-          <li><strong>Chaturthi</strong>: Ganesh's day. Modak gets a nudge.</li>
-          <li><strong>Shani vaar</strong> (Saturday): chana and chana dal preparations are traditionally set aside.</li>
-          <li><strong>Shravan maas</strong>: the holy monsoon month. Each day of the week rotates its kathol: moong on Monday &amp; Sunday, toor on Wednesday, chana on Thursday, vaal on Friday. Onion and garlic are avoided through the month.</li>
-          <li><strong>Adhik Maas</strong>: the rare extra lunar month. Extra satvic, extra gentle.</li>
-        </ul>
-      </div>
-
-      <hr class="info-divider">
-
-      <div class="info-section">
-        <h2>તહેવાર · Festivals</h2>
-        <p style="margin-bottom:0.75rem">Festival dates are hardcoded for 2025–2035. When one is active, the rangoli changes colour and the dish pool shifts accordingly.</p>
-        <ul>
-          <li><strong>Navratri</strong>: fasting dishes only. No grains, no onion or garlic.</li>
-          <li><strong>Diwali</strong>: sweets and festive savories come forward.</li>
-          <li><strong>Uttarayan</strong> (Makar Sankranti): til-gur, chikki, undhiyu.</li>
-          <li><strong>Ganesh Chaturthi</strong>: modak rises to the top.</li>
-          <li><strong>Holi</strong>: thandai, puran poli, cooling sweets.</li>
-          <li><strong>Paryushana</strong>: strict Jain observance. No root vegetables, no leafy greens, no tubers. The most satvic pool of the year.</li>
-        </ul>
-      </div>
-
-      <hr class="info-divider">
-
-      <div class="info-section">
-        <h2> વાનગી · The Dishes</h2>
-        <p style="margin-bottom:0.75rem">Gujarati vegetarian dishes, each tagged with meal times, seasonal months, and Ayurvedic qualities. Some appear only when their ingredient is actually available in the market.</p>
-        <ul>
-          <li><em>Undhiyu</em>: October to January, when fresh surti papdi is in season</li>
-          <li><em>Amrakhand</em>: April to June, Alphonso mango season only</li>
-          <li><em>Ponk vada</em>: December to February, ponk season in Surat</li>
-          <li><em>Methi thepla</em>: October to March, when fresh methi is around</li>
-          <li><em>Fafda-jalebi</em>: weekends only</li>
-        </ul>
-      </div>
-
-      <hr class="info-divider">
-
-      <p style="font-size:0.8rem; opacity:0.4; color:var(--c-maroon); text-align:center; font-style:italic">
-        Made with love for a mother who cooks every day without fail.
-      </p>
-
-    </div>
-  </div>
-
-  <script>
-    (function () {
-      const btn   = document.getElementById('info-btn');
-      const modal = document.getElementById('info-modal');
-      btn.addEventListener('click', function (e) {
-        e.stopPropagation();
-        modal.classList.add('open');
-      });
-      modal.addEventListener('click', function () {
-        modal.classList.remove('open');
-      });
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') modal.classList.remove('open');
-      });
-    })();
-  </script>
 
   <script src="data.js"></script>
   <script src="panchang.js"></script>
