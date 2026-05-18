@@ -25,7 +25,7 @@ Each time you load the page, the app quietly ranks all 138 dishes against today'
 
 ## The dish list
 
-138 Gujarati vegetarian dishes. The usuals are all there, thepla, dhokla, dal dhokli, kadhi khichdi, undhiyu, along with plenty of seasonal and festive ones.
+Only Gujarati vegetarian dishes. The usuals are all there, thepla, dhokla, dal dhokli, kadhi khichdi, undhiyu, along with plenty of seasonal and festive ones.
 
 Some are only suggested in certain months. Methi paratha appears only when fresh methi is in the market. Ponk vada only during ponk season in Surat. Amrakhand only when Alphonso mangoes are around.
 
