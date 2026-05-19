@@ -7,7 +7,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["steamed", "fermented", "light", "satvic", "chana", "everyday"],
-    note: "Steamed & light, easy on digestion",
+    ingredients: "ચોખા, ચણાની દાળ, દહીં, આદુ, લીલા મરચાં",
+    note: "Steamed & light — easy on digestion",
   },
   {
     id: "khaman",
@@ -17,6 +18,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["steamed", "fermented", "light", "satvic", "chana", "everyday"],
+    ingredients: "ચણાનો લોટ, લીંબુના ફૂલ, ખાંડ, મીઠું, તેલ",
     note: "Soft besan khaman with green chutney",
   },
   {
@@ -27,6 +29,7 @@ const DISHES = [
     mealTime: ["morning", "lunch", "snack"],
     excludeDays: [],
     tags: ["baked", "light", "satvic", "grain", "leafy", "everyday"],
+    ingredients: "ઘઉંનો લોટ, મેથીની ભાજી, દહીં, મસાલા, તેલ",
     note: "Methi thepla with dahi or achaar",
   },
   {
@@ -37,7 +40,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["baked", "fermented", "heavy", "satvic", "grain", "everyday"],
-    note: "Baked savory cake, filling and wholesome",
+    ingredients: "ચોખા, ચણાની દાળ, તુવેરની દાળ, દૂધી, દહીં, તેલ",
+    note: "Baked savory cake — filling and wholesome",
   },
   {
     id: "poha",
@@ -47,7 +51,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["light", "satvic", "grain", "everyday"],
-    note: "Quick and light, ideal morning meal",
+    ingredients: "પૌંઆ, બટાટા, ડુંગળી, મગફળી, લીંબુ, મસાલા",
+    note: "Quick and light — ideal morning meal",
   },
   {
     id: "methi_gota",
@@ -66,7 +71,8 @@ const DISHES = [
       "leafy",
       "everyday",
     ],
-    note: "Crispy fenugreek fritters, monsoon and winter both",
+    ingredients: "ચણાનો લોટ, મેથીની ભાજી, મરી, આખા ધાણા, તેલ",
+    note: "Crispy fenugreek fritters — monsoon and winter both",
   },
   {
     id: "fafda_jalebi",
@@ -76,6 +82,7 @@ const DISHES = [
     mealTime: ["morning"],
     excludeDays: [1, 2, 3, 4, 5],
     tags: ["fried", "heavy", "rajasic", "chana", "grain", "festive"],
+    ingredients: "ચણાનો લોટ, અજમો, તેલ, મેંદો, ખાંડ, કેસર",
     note: "The sacred Sunday morning ritual",
   },
   {
@@ -86,7 +93,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["steamed", "light", "satvic", "grain", "leafy", "everyday"],
-    note: "Steamed methi dumplings, wholesome and satvic",
+    ingredients: "ઘઉંનો કકરો લોટ, ચણાનો લોટ, મેથીની ભાજી, દૂધી, તેલ",
+    note: "Steamed methi dumplings — wholesome and satvic",
   },
   {
     id: "upma",
@@ -96,7 +104,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["light", "satvic", "grain", "everyday"],
-    note: "Semolina upma, light and quick",
+    ingredients: "રવો, ડુંગળી, ગાજર, વટાણા, રાઈ, લીમડો",
+    note: "Semolina upma — light and quick",
   },
   {
     id: "rava_dhokla",
@@ -106,7 +115,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["steamed", "light", "satvic", "grain", "everyday"],
-    note: "Instant semolina dhokla, soft and pillowy",
+    ingredients: "રવો, દહીં, ઈનો, આદુ, મરચાં, તેલ",
+    note: "Instant semolina dhokla — soft and pillowy",
   },
   {
     id: "surti_locho",
@@ -116,6 +126,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["steamed", "light", "satvic", "chana", "everyday"],
+    ingredients: "ચણાની દાળ, પૌંઆ, અડદની દાળ, આદુ, મરચાં",
     note: "Surat's famous soft besan delight",
   },
   {
@@ -126,6 +137,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["steamed", "light", "satvic", "leafy", "chana", "everyday"],
+    ingredients: "અળવીના પાન, ચણાનો લોટ, ગોળ, આમલી, મસાલા",
     note: "Colocasia leaves rolled with spiced besan",
   },
   {
@@ -136,7 +148,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["warming", "heavy", "jaggery", "ghee", "grain", "festive"],
-    note: "Wheat flour, jaggery, ghee, pure nourishing energy",
+    ingredients: "ઘઉંનો લોટ, ગોળ, ઘી",
+    note: "Wheat flour, jaggery, ghee — pure nourishing energy",
   },
   {
     id: "daliya",
@@ -146,7 +159,8 @@ const DISHES = [
     mealTime: ["morning", "dinner"],
     excludeDays: [],
     tags: ["warming", "light", "satvic", "grain", "everyday"],
-    note: "Broken wheat porridge, warming as breakfast or dinner",
+    ingredients: "ફાડા ઘઉં, શાકભાજી, મગની દાળ, ઘી, મસાલા",
+    note: "Broken wheat porridge — warming as breakfast or dinner",
   },
   {
     id: "gathiya",
@@ -156,6 +170,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fried", "light", "rajasic", "chana", "everyday"],
+    ingredients: "ચણાનો લોટ, અજમો, મરી, તેલ, મીઠું",
     note: "With green chutney and masala chai",
   },
   {
@@ -166,7 +181,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["light", "chana", "grain", "everyday"],
-    note: "Light and crunchy, ideal any time of day",
+    ingredients: "મમરા, સેવ, સીંગદાણા, હળદર, તેલ",
+    note: "Light and crunchy — ideal any time of day",
   },
   {
     id: "chivda",
@@ -176,7 +192,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fried", "light", "grain", "everyday"],
-    note: "Crispy spiced poha, classic Gujarati farsan",
+    ingredients: "પૌંઆ, મગફળી, દાળિયા, લીમડો, હળદર, તેલ",
+    note: "Crispy spiced poha — classic Gujarati farsan",
   },
   {
     id: "bhel",
@@ -186,7 +203,8 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["light", "grain", "everyday"],
-    note: "Tangy puffed rice, a favourite street food",
+    ingredients: "મમરા, સેવ, પાપડી, ડુંગળી, ટામેટાં, ચટણી",
+    note: "Tangy puffed rice — a favourite street food",
   },
   {
     id: "makhana",
@@ -196,7 +214,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["roasted", "light", "satvic", "fasting", "everyday"],
-    note: "Roasted lotus seeds, light and deeply satvic",
+    ingredients: "મખાણા, ઘી, મીઠું, મરી",
+    note: "Roasted lotus seeds — light and deeply satvic",
   },
   {
     id: "dabeli",
@@ -206,7 +225,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["heavy", "rajasic", "root", "coconut", "everyday"],
-    note: "Spiced potato in a pav, Kutchi street food",
+    ingredients: "પાંઉ, બટાટા, દાબેલી મસાલો, દાડમ, સીંગ, ચટણી",
+    note: "Spiced potato in a pav — Kutchi street food",
   },
   {
     id: "dal_dhokli",
@@ -216,7 +236,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "toor", "grain", "everyday"],
-    note: "Wheat strips simmered in toor dal, comfort in a bowl",
+    ingredients: "તુવેરની દાળ, ઘઉંનો લોટ, ગોળ, કોકમ, સીંગદાણા",
+    note: "Wheat strips simmered in toor dal — comfort in a bowl",
   },
   {
     id: "gujarati_dal",
@@ -226,7 +247,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "toor", "everyday"],
-    note: "Sweet-tangy toor dal, the soul of a Gujarati thali",
+    ingredients: "તુવેરની દાળ, ગોળ, આમલી, ટામેટાં, સીંગદાણા, મસાલા",
+    note: "Sweet-tangy toor dal — the soul of a Gujarati thali",
   },
   {
     id: "undhiyu",
@@ -237,7 +259,8 @@ const DISHES = [
     excludeDays: [],
     months: [10, 11, 12, 1],
     tags: ["heavy", "satvic", "ghee", "root", "festive"],
-    note: "The king of Gujarati dishes, best at Uttarayan",
+    ingredients: "પાપડી, રતાળુ, બટાટા, કેળાં, રીંગણ, મુઠિયા, તેલ",
+    note: "The king of Gujarati dishes — best at Uttarayan",
   },
   {
     id: "ringan_olo",
@@ -247,7 +270,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["roasted", "light", "satvic", "everyday"],
-    note: "Smoky roasted brinjal, rustic and flavourful",
+    ingredients: "રીંગણ, ડુંગળી, ટામેટાં, લસણ, આદુ, તેલ",
+    note: "Smoky roasted brinjal — rustic and flavourful",
   },
   {
     id: "sev_tameta",
@@ -257,6 +281,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "everyday"],
+    ingredients: "ટામેટાં, જાડી સેવ, ડુંગળી, લસણ, મસાલા, તેલ",
     note: "Tangy tomato curry crowned with crispy sev",
   },
   {
@@ -268,7 +293,8 @@ const DISHES = [
     excludeDays: [],
     months: [10, 11, 12, 1, 2],
     tags: ["light", "satvic", "everyday"],
-    note: "Flat beans stir-fry, only in winter when fresh valor is available",
+    ingredients: "વાલોળ પાપડી, અજમો, લસણ, તેલ, મસાલા",
+    note: "Flat beans stir-fry — only in winter when fresh valor is available",
   },
   {
     id: "kadhi_khichdi",
@@ -278,7 +304,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "curd", "moong", "grain", "everyday"],
-    note: "The ultimate Gujarati pairing, curd kadhi with rice khichdi",
+    ingredients: "ચોખા, મગની દાળ, દહીં, ચણાનો લોટ, ઘી, મસાલા",
+    note: "The ultimate Gujarati pairing — curd kadhi with rice khichdi",
   },
   {
     id: "dudhi_chana_dal",
@@ -288,7 +315,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [6],
     tags: ["light", "satvic", "cooling", "chana", "everyday"],
-    note: "Bottle gourd with chana dal, cooling and nourishing",
+    ingredients: "દૂધી, ચણાની દાળ, ટામેટાં, મસાલા, તેલ",
+    note: "Bottle gourd with chana dal — cooling and nourishing",
   },
   {
     id: "moong_dal_khichdi",
@@ -298,7 +326,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "moong", "grain", "fasting", "everyday"],
-    note: "Pure and satvic, a staple of every Gujarati home",
+    ingredients: "ચોખા, મગની દાળ, હળદર, મીઠું, ઘી",
+    note: "Pure and satvic — a staple of every Gujarati home",
   },
   {
     id: "batata_shaak",
@@ -308,6 +337,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "root", "everyday"],
+    ingredients: "બટાટા, રાઈ, જીરું, હળદર, લાલ મરચું, તેલ",
     note: "Everyday spiced potato curry with rotli",
   },
   {
@@ -318,7 +348,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "cooling", "everyday"],
-    note: "Ivy gourd stir-fry, light and digestible",
+    ingredients: "ટીંડોળા, રાઈ, હળદર, ધાણાજીરું, તેલ",
+    note: "Ivy gourd stir-fry — light and digestible",
   },
   {
     id: "shrikhand_puri",
@@ -328,7 +359,8 @@ const DISHES = [
     mealTime: ["lunch"],
     excludeDays: [],
     tags: ["fried", "heavy", "satvic", "curd", "dairy", "grain", "festive"],
-    note: "Thick sweetened yoghurt with hot puris, festive joy",
+    ingredients: "મસ્કો દહીં, ખાંડ, એલચી, ઘઉંનો લોટ, તેલ",
+    note: "Thick sweetened yoghurt with hot puris — festive joy",
   },
   {
     id: "vagharela_chawal",
@@ -338,7 +370,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "grain", "everyday"],
-    note: "Tempered rice, quick and satisfying",
+    ingredients: "રાંધેલા ચોખા, રાઈ, જીરું, લીમડો, ડુંગળી, તેલ",
+    note: "Tempered rice — quick and satisfying",
   },
   {
     id: "khichdi",
@@ -348,7 +381,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "moong", "grain", "fasting", "everyday"],
-    note: "Simplest and most healing, light on the gut at night",
+    ingredients: "ચોખા, મગની ફોતરાવાળી દાળ, હળદર, મીઠું, પાણી",
+    note: "Simplest and most healing — light on the gut at night",
   },
   {
     id: "vaghareli_khichdi",
@@ -358,6 +392,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "moong", "grain", "everyday"],
+    ingredients: "ચોખા, મગની દાળ, શાકભાજી, ડુંગળી, ટામેટાં, ઘી",
     note: "Khichdi with a mustard-cumin temper",
   },
   {
@@ -369,7 +404,8 @@ const DISHES = [
     excludeDays: [],
     months: [9, 10, 11, 12, 1, 2, 3],
     tags: ["warming", "heavy", "grain", "ghee", "everyday"],
-    note: "Thick millet flatbread with ghee, warming grain for cool months",
+    ingredients: "બાજરાનો લોટ, મીઠું, પાણી, ઘી",
+    note: "Thick millet flatbread with ghee — warming grain for cool months",
   },
   {
     id: "dudhi_shaak",
@@ -379,7 +415,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "cooling", "everyday"],
-    note: "Bottle gourd curry, cooling and gentle on digestion",
+    ingredients: "દૂધી, ટામેટાં, ધાણાજીરું, હળદર, તેલ",
+    note: "Bottle gourd curry — cooling and gentle on digestion",
   },
   {
     id: "moong_dal",
@@ -389,7 +426,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "moong", "everyday"],
-    note: "Thin satvic moong dal, the most easily digested meal",
+    ingredients: "મગની દાળ, ઘી, રાઈ, જીરું, હળદર, લીંબુ",
+    note: "Thin satvic moong dal — the most easily digested meal",
   },
   {
     id: "khakhra",
@@ -399,7 +437,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["baked", "roasted", "light", "grain", "everyday"],
-    note: "Crispy thin roasted flatbread, the everyday Gujarati snack",
+    ingredients: "ઘઉંનો લોટ, તેલ, મસાલા",
+    note: "Crispy thin roasted flatbread — the everyday Gujarati snack",
   },
   {
     id: "khandvi",
@@ -409,7 +448,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["light", "satvic", "curd", "chana", "everyday"],
-    note: "Silky besan rolls in buttermilk, a Gujarati art form",
+    ingredients: "ચણાનો લોટ, છાસ, આદુ, મરચાં, રાઈ, કોપરાનું છીણ",
+    note: "Silky besan rolls in buttermilk — a Gujarati art form",
   },
   {
     id: "sheero",
@@ -419,7 +459,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["warming", "heavy", "ghee", "grain", "festive", "everyday"],
-    note: "Semolina halwa with ghee and cardamom, deeply comforting",
+    ingredients: "રવો, ખાંડ, ઘી, દૂધ, એલચી, ડ્રાયફ્રૂટ્સ",
+    note: "Semolina halwa with ghee and cardamom — deeply comforting",
   },
   {
     id: "lapsi",
@@ -429,7 +470,8 @@ const DISHES = [
     mealTime: ["morning", "dinner"],
     excludeDays: [],
     tags: ["warming", "light", "jaggery", "ghee", "grain", "everyday"],
-    note: "Sweet broken wheat with jaggery, nourishing and warming",
+    ingredients: "ફાડા ઘઉં, ગોળ, ઘી, એલચી",
+    note: "Sweet broken wheat with jaggery — nourishing and warming",
   },
   {
     id: "puran_poli",
@@ -439,7 +481,8 @@ const DISHES = [
     mealTime: ["morning", "lunch"],
     excludeDays: [],
     tags: ["heavy", "satvic", "chana", "jaggery", "ghee", "grain", "festive"],
-    note: "Sweet chana dal stuffed flatbread, festive and beloved",
+    ingredients: "ચણાની દાળ, ગોળ, એલચી, જાયફળ, ઘઉંનો લોટ, ઘી",
+    note: "Sweet chana dal stuffed flatbread — festive and beloved",
   },
   {
     id: "sabudana_khichdi",
@@ -449,7 +492,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["light", "satvic", "sabudana", "fasting", "everyday"],
-    note: "Tapioca pearls with peanuts, light and satisfying",
+    ingredients: "સાબુદાણા, બટાટા, સીંગદાણાનો ભૂકો, લીલા મરચાં, ઘી",
+    note: "Tapioca pearls with peanuts — light and satisfying",
   },
   {
     id: "sabudana_vada",
@@ -459,7 +503,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fried", "light", "sabudana", "fasting", "everyday"],
-    note: "Crispy tapioca patties, popular on fasting days",
+    ingredients: "સાબુદાણા, બાફેલા બટાટા, સીંગદાણા, મરચાં, તેલ",
+    note: "Crispy tapioca patties — popular on fasting days",
   },
   {
     id: "batata_vada",
@@ -469,7 +514,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "rajasic", "chana", "root", "everyday"],
-    note: "Spiced potato balls in besan batter, street food classic",
+    ingredients: "બટાટા, ચણાનો લોટ, આદુ, લસણ, મરચાં, કોથમરી, તેલ",
+    note: "Spiced potato balls in besan batter — street food classic",
   },
   {
     id: "moong_chilla",
@@ -479,7 +525,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["light", "satvic", "moong", "everyday"],
-    note: "Thin green moong pancake, protein-rich and light",
+    ingredients: "મગની દાળ, આદુ, મરચાં, કોથમરી, મીઠું, તેલ",
+    note: "Thin green moong pancake — protein-rich and light",
   },
   {
     id: "besan_chilla",
@@ -489,7 +536,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["light", "satvic", "chana", "everyday"],
-    note: "Chickpea flour pancake, quick and filling",
+    ingredients: "ચણાનો લોટ, ડુંગળી, ટામેટાં, મરચાં, અજમો, તેલ",
+    note: "Chickpea flour pancake — quick and filling",
   },
   {
     id: "corn_poha",
@@ -499,7 +547,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["light", "grain", "everyday"],
-    note: "Sweet corn with flattened rice, a colourful morning bowl",
+    ingredients: "મકાઈ, પૌંઆ, ડુંગળી, લીંબુ, મસાલા, તેલ",
+    note: "Sweet corn with flattened rice — a colourful morning bowl",
   },
   {
     id: "methi_paratha",
@@ -510,7 +559,8 @@ const DISHES = [
     excludeDays: [],
     months: [10, 11, 12, 1, 2, 3],
     tags: ["baked", "warming", "grain", "leafy", "everyday"],
-    note: "Fenugreek-laced whole wheat paratha, only when fresh methi is available",
+    ingredients: "ઘઉંનો લોટ, મેથીની ભાજી, મસાલા, દહીં, તેલ",
+    note: "Fenugreek-laced whole wheat paratha — only when fresh methi is available",
   },
   {
     id: "aloo_paratha",
@@ -520,7 +570,8 @@ const DISHES = [
     mealTime: ["morning", "lunch"],
     excludeDays: [],
     tags: ["baked", "heavy", "grain", "root", "everyday"],
-    note: "Stuffed potato paratha, hearty and satisfying",
+    ingredients: "ઘઉંનો લોટ, બાફેલા બટાટા, ડુંગળી, મસાલા, માખણ",
+    note: "Stuffed potato paratha — hearty and satisfying",
   },
   {
     id: "paneer_paratha",
@@ -530,7 +581,8 @@ const DISHES = [
     mealTime: ["morning", "lunch"],
     excludeDays: [],
     tags: ["baked", "heavy", "grain", "dairy", "everyday"],
-    note: "Cottage cheese stuffed paratha, rich and filling",
+    ingredients: "ઘઉંનો લોટ, પનીર, મસાલા, કોથમરી, ઘી",
+    note: "Cottage cheese stuffed paratha — rich and filling",
   },
   {
     id: "idli_sambhar",
@@ -548,7 +600,8 @@ const DISHES = [
       "toor",
       "everyday",
     ],
-    note: "Steamed rice cakes with lentil stew, light and wholesome",
+    ingredients: "ચોખા, અડદની દાળ, તુવેરની દાળ, શાકભાજી, સાંભાર મસાલો",
+    note: "Steamed rice cakes with lentil stew — light and wholesome",
   },
   {
     id: "rava_idli",
@@ -558,7 +611,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["steamed", "light", "satvic", "grain", "everyday"],
-    note: "Semolina idli, no fermentation needed, ready in minutes",
+    ingredients: "રવો, દહીં, ગાજર, કાજુ, ઈનો, રાઈ",
+    note: "Semolina idli — no fermentation needed, ready in minutes",
   },
   {
     id: "uttapam",
@@ -568,6 +622,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fermented", "light", "satvic", "urad", "grain", "everyday"],
+    ingredients: "ચોખા, અડદની દાળ, ડુંગળી, ટામેટાં, મરચાં, કોથમરી",
     note: "Thick rice pancake with vegetables on top",
   },
   {
@@ -578,6 +633,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fermented", "light", "satvic", "urad", "grain", "root", "everyday"],
+    ingredients: "ચોખા, અડદની દાળ, બટાટા, ડુંગળી, મસાલા, તેલ",
     note: "Crispy rice crepe with spiced potato filling",
   },
   {
@@ -588,7 +644,8 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "grain", "festive"],
-    note: "Spiral rice flour crisps, the Diwali favourite",
+    ingredients: "ચોખાનો લોટ, ચણાનો લોટ, તલ, અજમો, માખણ, તેલ",
+    note: "Spiral rice flour crisps — the Diwali favourite",
   },
   {
     id: "masala_toast",
@@ -598,7 +655,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["baked", "light", "grain", "everyday"],
-    note: "Spiced chutney toast, the everyday quick breakfast",
+    ingredients: "બ્રેડ, બટાટા, ડુંગળી, લીલી ચટણી, માખણ, સેવ",
+    note: "Spiced chutney toast — the everyday quick breakfast",
   },
   {
     id: "bread_upma",
@@ -608,7 +666,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["light", "grain", "everyday"],
-    note: "Tempered bread with vegetables, quick and tasty",
+    ingredients: "બ્રેડના ટુકડા, ડુંગળી, ટામેટાં, રાઈ, લીમડો, તેલ",
+    note: "Tempered bread with vegetables — quick and tasty",
   },
   {
     id: "ponk_vada",
@@ -619,7 +678,8 @@ const DISHES = [
     excludeDays: [],
     months: [11, 12, 1, 2],
     tags: ["fried", "heavy", "rajasic", "warming", "grain", "everyday"],
-    note: "Tender jowar kernel fritters, only during ponk season in Surat",
+    ingredients: "પોંક (જુવાર), ચણાનો લોટ, આદુ, લસણ, મરચાં, તેલ",
+    note: "Tender jowar kernel fritters — only during ponk season in Surat",
   },
   {
     id: "adadiya_pak",
@@ -630,7 +690,8 @@ const DISHES = [
     excludeDays: [],
     months: [11, 12, 1, 2],
     tags: ["warming", "heavy", "urad", "ghee", "jaggery", "festive"],
-    note: "Urad flour and ghee winter tonic, warms from the inside",
+    ingredients: "અડદનો લોટ, ઘી, ખાંડ, ગુંદર, સૂંઠ, બદામ-પિસ્તા",
+    note: "Urad flour and ghee winter tonic — warms from the inside",
   },
   {
     id: "mohanthal",
@@ -640,6 +701,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["warming", "heavy", "ghee", "chana", "dairy", "festive"],
+    ingredients: "ચણાનો લોટ, ઘી, ખાંડ, દૂધ, એલચી, બદામ",
     note: "Roasted besan fudge with cardamom and saffron",
   },
   {
@@ -650,6 +712,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["heavy", "dairy", "ghee", "everyday"],
+    ingredients: "દૂધી, દૂધ, માવો, ખાંડ, ઘી, એલચી",
     note: "Slow-cooked bottle gourd pudding with milk and sugar",
   },
   {
@@ -661,7 +724,8 @@ const DISHES = [
     excludeDays: [],
     months: [11, 12, 1, 2, 3],
     tags: ["warming", "heavy", "dairy", "ghee", "everyday"],
-    note: "Carrot pudding slow-cooked in milk, winter carrots at their sweetest",
+    ingredients: "ગાજર, દૂધ, માવો, ખાંડ, ઘી, ડ્રાયફ્રૂટ્સ",
+    note: "Carrot pudding slow-cooked in milk — winter carrots at their sweetest",
   },
   {
     id: "sev_usal",
@@ -671,6 +735,7 @@ const DISHES = [
     mealTime: ["snack", "lunch"],
     excludeDays: [],
     tags: ["heavy", "satvic", "chola", "everyday"],
+    ingredients: "સફેદ વટાણા, ડુંગળી, લસણ, ટામેટાં, સેવ, પાંઉ, મસાલા",
     note: "Sprouted peas curry topped generously with sev",
   },
   {
@@ -681,6 +746,7 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "chola", "root", "everyday"],
+    ingredients: "સફેદ વટાણા, બટાટા, ડુંગળી, ચટણી, મસાલા, તેલ",
     note: "White peas gravy with crispy potato patties",
   },
   {
@@ -691,6 +757,7 @@ const DISHES = [
     mealTime: ["snack", "lunch"],
     excludeDays: [],
     tags: ["heavy", "rajasic", "onion", "root", "everyday"],
+    ingredients: "બટાટા, વટાણા, ફ્લાવર, કેપ્સિકમ, ટામેટાં, પાંઉ, માખણ",
     note: "Spiced mashed vegetable medley with buttered pav",
   },
   {
@@ -701,7 +768,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "rajasic", "chana", "onion", "root", "everyday"],
-    note: "Batata vada in a pav, the great Indian fast food",
+    ingredients: "બટાટા, ચણાનો લોટ, લસણની ચટણી, પાંઉ, લીલા મરચાં, તેલ",
+    note: "Batata vada in a pav — the great Indian fast food",
   },
   {
     id: "kanda_bhajia",
@@ -711,7 +779,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "rajasic", "chana", "onion", "everyday"],
-    note: "Crispy onion fritters, best eaten hot with chai",
+    ingredients: "ડુંગળી, ચણાનો લોટ, ધાણા, મરચાં, મીઠું, તેલ",
+    note: "Crispy onion fritters — best eaten hot with chai",
   },
   {
     id: "batata_bhajia",
@@ -721,6 +790,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "rajasic", "chana", "root", "everyday"],
+    ingredients: "બટાટાના ગોળ ટુકડા, ચણાનો લોટ, હળદર, મીઠું, તેલ",
     note: "Thin potato slices in spiced besan batter",
   },
   {
@@ -731,7 +801,8 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "rajasic", "chana", "everyday"],
-    note: "Green chilli fritters, for the brave",
+    ingredients: "મોટા લીલા મરચાં, ચણાનો લોટ, મીઠું, તેલ, અજમો",
+    note: "Green chilli fritters — for the brave",
   },
   {
     id: "dahi_puri",
@@ -741,6 +812,7 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["light", "curd", "everyday"],
+    ingredients: "પૂરી, દહીં, બટાટા, ચણા, લીલી અને મીઠી ચટણી, સેવ",
     note: "Crispy puris with yogurt, chutneys, and sev",
   },
   {
@@ -751,6 +823,7 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["light", "curd", "everyday"],
+    ingredients: "પાપડી, બટાટા, દહીં, ચટણી, ડુંગળી, સેવ",
     note: "Crispy wafers with curd, tamarind, and sev",
   },
   {
@@ -761,6 +834,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "rajasic", "moong", "everyday"],
+    ingredients: "મેંદો, મગની દાળ, મસાલા, તેલ",
     note: "Flaky pastry stuffed with spiced moong or onion filling",
   },
   {
@@ -772,7 +846,8 @@ const DISHES = [
     excludeDays: [],
     months: [10, 11, 12, 1],
     tags: ["fried", "heavy", "everyday"],
-    note: "Fresh pigeon pea stuffed kachori, a winter Gujarati treat",
+    ingredients: "મેંદો, તુવેરના લીલવા, આદુ, મરચાં, લીંબુ, તેલ",
+    note: "Fresh pigeon pea stuffed kachori — a winter Gujarati treat",
   },
   {
     id: "sev_khamani",
@@ -782,6 +857,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["light", "satvic", "chana", "everyday"],
+    ingredients: "ખમણ, સેવ, દાડમ, લસણ, રાઈ, તેલ",
     note: "Crumbled dhokla tossed with tempering and sev",
   },
   {
@@ -792,6 +868,7 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["light", "everyday"],
+    ingredients: "પૂરી, ફુદીનાનું પાણી, મીઠી ચટણી, બાફેલા બટાટા, ચણા",
     note: "Crispy hollow puris with tangy tamarind water",
   },
   {
@@ -802,6 +879,7 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["light", "everyday"],
+    ingredients: "પૂરી, બટાટા, ડુંગળી, ચટણી, ટામેટાં, ઝીણી સેવ",
     note: "Flat puris loaded with chutneys, potato, and sev",
   },
   {
@@ -812,6 +890,7 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["heavy", "chola", "everyday"],
+    ingredients: "પૂરી, વટાણાની ગ્રેવી, ડુંગળી, ટામેટાં, ચટણી, સેવ",
     note: "Puris in a spiced green pea gravy",
   },
   {
@@ -822,6 +901,7 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["light", "everyday"],
+    ingredients: "મકાઈ, ડુંગળી, ટામેટાં, ચટણી, લીંબુ, સેવ",
     note: "Sweet corn with chutneys and crunchy namkeen",
   },
   {
@@ -832,6 +912,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "jaggery", "coconut", "festive"],
+    ingredients: "મેંદો, માવો, સૂકું કોપરું, ખાંડ, ડ્રાયફ્રૂટ્સ, તેલ",
     note: "Deep-fried sweet dumplings stuffed with dry fruits and coconut",
   },
   {
@@ -842,7 +923,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "everyday"],
-    note: "Cluster beans stir-fry, slightly bitter, very nutritious",
+    ingredients: "ગુવાર, અજમો, લસણ, ટામેટાં, મસાલા, તેલ",
+    note: "Cluster beans stir-fry — slightly bitter, very nutritious",
   },
   {
     id: "fansi_shaak",
@@ -852,6 +934,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "coconut", "everyday"],
+    ingredients: "ફણસી, લસણ, રાઈ, હળદર, કોપરાનું છીણ, તેલ",
     note: "French beans sautéed with mustard and coconut",
   },
   {
@@ -862,7 +945,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "cooling", "everyday"],
-    note: "Bitter gourd, an acquired taste that heals",
+    ingredients: "કારેલા, ગોળ, ધાણાજીરું, હળદર, લાલ મરચું, તેલ",
+    note: "Bitter gourd — an acquired taste that heals",
   },
   {
     id: "kela_shaak",
@@ -872,7 +956,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["heavy", "satvic", "root", "everyday"],
-    note: "Raw banana curry, a filling and grounding shaak",
+    ingredients: "કાચા કેળા, રાઈ, હળદર, મરચું, તેલ",
+    note: "Raw banana curry — a filling and grounding shaak",
   },
   {
     id: "turiya_shaak",
@@ -882,7 +967,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "cooling", "everyday"],
-    note: "Ridge gourd curry, light and easily digestible",
+    ingredients: "તૂરિયા, જીરું, લસણ, ટામેટાં, મસાલા, તેલ",
+    note: "Ridge gourd curry — light and easily digestible",
   },
   {
     id: "mag_shaak",
@@ -892,7 +978,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["heavy", "satvic", "moong", "warming", "everyday"],
-    note: "Whole moong bean curry, protein-rich and warming",
+    ingredients: "આખા મગ, ડુંગળી, લસણ, ટામેટાં, મસાલા, તેલ",
+    note: "Whole moong bean curry — protein-rich and warming",
   },
   {
     id: "vatana_shaak",
@@ -902,7 +989,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "everyday"],
-    note: "Green pea curry, sweet, fresh, and wholesome",
+    ingredients: "લીલા વટાણા, ટામેટાં, ડુંગળી, લસણ, આદુ, ગરમ મસાલો",
+    note: "Green pea curry — sweet, fresh, and wholesome",
   },
   {
     id: "methi_shaak",
@@ -913,7 +1001,8 @@ const DISHES = [
     excludeDays: [],
     months: [10, 11, 12, 1, 2, 3],
     tags: ["light", "satvic", "warming", "leafy", "everyday"],
-    note: "Fenugreek leaf stir-fry, best when fresh methi is in season",
+    ingredients: "મેથીની ભાજી, લસણ, લાલ સૂકું મરચું, હળદર, તેલ",
+    note: "Fenugreek leaf stir-fry — best when fresh methi is in season",
   },
   {
     id: "suva_shaak",
@@ -923,7 +1012,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "leafy", "everyday"],
-    note: "Dill leaves stir-fry, fragrant and underrated",
+    ingredients: "સુવાની ભાજી, લસણ, મરચાં, હળદર, તેલ",
+    note: "Dill leaves stir-fry — fragrant and underrated",
   },
   {
     id: "palak_shaak",
@@ -933,7 +1023,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "leafy", "everyday"],
-    note: "Spiced spinach, simple and iron-rich",
+    ingredients: "પાલક, લસણ, આદુ, લીલા મરચાં, તેલ",
+    note: "Spiced spinach — simple and iron-rich",
   },
   {
     id: "lili_tuver",
@@ -944,7 +1035,8 @@ const DISHES = [
     excludeDays: [],
     months: [11, 12, 1],
     tags: ["light", "satvic", "toor", "everyday"],
-    note: "Fresh pigeon peas, only available for a few winter weeks",
+    ingredients: "લીલી તુવેરના દાણા, ટામેટાં, આદુ, લસણ, મસાલા, તેલ",
+    note: "Fresh pigeon peas — only available for a few winter weeks",
   },
   {
     id: "kothi_shaak",
@@ -954,6 +1046,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["heavy", "satvic", "coconut", "everyday"],
+    ingredients: "કોઠી (વાલોળના દાણા), તલ, કોપરાનું છીણ, લસણ, મસાલા",
     note: "Hyacinth beans with sesame and coconut",
   },
   {
@@ -964,6 +1057,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "everyday"],
+    ingredients: "પાપડી, અજમો, લસણ, ટામેટાં, મસાલા, તેલ",
     note: "Fresh flat beans tempered with cumin and chilli",
   },
   {
@@ -974,7 +1068,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "root", "everyday"],
-    note: "Potato and cauliflower, the classic dry sabzi",
+    ingredients: "બટાટા, ફ્લાવર, ડુંગળી, ટામેટાં, ગરમ મસાલો, તેલ",
+    note: "Potato and cauliflower — the classic dry sabzi",
   },
   {
     id: "panchkutiyu",
@@ -984,7 +1079,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["satvic", "festive", "everyday"],
-    note: "Five-vegetable Gujarati dry curry, festive and flavourful",
+    ingredients: "પાપડી, બટાટા, શક્કરિયા, રીંગણ, વાલોળ, મસાલા, તેલ",
+    note: "Five-vegetable Gujarati dry curry — festive and flavourful",
   },
   {
     id: "methi_matar",
@@ -995,7 +1091,8 @@ const DISHES = [
     excludeDays: [],
     months: [10, 11, 12, 1, 2, 3],
     tags: ["light", "satvic", "leafy", "everyday"],
-    note: "Fenugreek and green peas, both fresh in winter",
+    ingredients: "મેથીની ભાજી, વટાણા, મલાઈ, ડુંગળી, લસણ, તેલ",
+    note: "Fenugreek and green peas — both fresh in winter",
   },
   {
     id: "palak_paneer",
@@ -1005,6 +1102,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["satvic", "leafy", "dairy", "everyday"],
+    ingredients: "પાલક, પનીર, ડુંગળી, લસણ, ગરમ મસાલો, માખણ",
     note: "Cottage cheese in creamy spinach gravy",
   },
   {
@@ -1015,6 +1113,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["satvic", "dairy", "onion", "everyday"],
+    ingredients: "લીલા વટાણા, પનીર, ટામેટાં, ડુંગળી, કાજુ, તેલ",
     note: "Peas and paneer in a tomato-onion gravy",
   },
   {
@@ -1025,7 +1124,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["rajasic", "dairy", "onion", "everyday"],
-    note: "Scrambled cottage cheese with spices, quick and hearty",
+    ingredients: "પનીર, ડુંગળી, ટામેટાં, કેપ્સિકમ, મસાલા, તેલ",
+    note: "Scrambled cottage cheese with spices — quick and hearty",
   },
   {
     id: "ringan_batata",
@@ -1035,7 +1135,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["satvic", "root", "everyday"],
-    note: "Brinjal and potato together, a rustic everyday shaak",
+    ingredients: "રીંગણ, બટાટા, રાઈ, જીરું, ટામેટાં, મસાલા, તેલ",
+    note: "Brinjal and potato together — a rustic everyday shaak",
   },
   {
     id: "bhindi_masala",
@@ -1045,7 +1146,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["roasted", "satvic", "everyday"],
-    note: "Okra stir-fried with spices, crispy and flavourful",
+    ingredients: "ભીંડા, ડુંગળી, આમચૂર પાવડર, ધાણાજીરું, તેલ",
+    note: "Okra stir-fried with spices — crispy and flavourful",
   },
   {
     id: "tameta_batata",
@@ -1055,7 +1157,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["satvic", "root", "everyday"],
-    note: "Tomato and potato curry, tangy and comforting",
+    ingredients: "ટામેટાં, બટાટા, રાઈ, જીરું, ધાણાજીરું, મીઠું, તેલ",
+    note: "Tomato and potato curry — tangy and comforting",
   },
   {
     id: "marcha_batata",
@@ -1065,7 +1168,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["satvic", "root", "everyday"],
-    note: "Capsicum and potato stir-fry, vibrant and tasty",
+    ingredients: "કેપ્સિકમ મરચાં, બટાટા, હળદર, રાઈ, તેલ",
+    note: "Capsicum and potato stir-fry — vibrant and tasty",
   },
   {
     id: "suva_moong_dal",
@@ -1075,7 +1179,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "moong", "leafy", "everyday"],
-    note: "Moong dal cooked with fresh dill, aromatic and light",
+    ingredients: "મગની દાળ, સુવાની ભાજી, લસણ, ટામેટાં, તેલ",
+    note: "Moong dal cooked with fresh dill — aromatic and light",
   },
   {
     id: "trevti_dal",
@@ -1085,7 +1190,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["heavy", "satvic", "moong", "toor", "masoor", "everyday"],
-    note: "Three-lentil blend, hearty and nutritious",
+    ingredients: "મગની દાળ, તુવેરની દાળ, મસૂરની દાળ, આદુ, લસણ, ઘી",
+    note: "Three-lentil blend — hearty and nutritious",
   },
   {
     id: "chola_shaak",
@@ -1095,7 +1201,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["heavy", "satvic", "chola", "everyday"],
-    note: "Black-eyed peas curry, wholesome and earthy",
+    ingredients: "ચોળા, ડુંગળી, ટામેટાં, આદુ, લસણ, ગરમ મસાલો",
+    note: "Black-eyed peas curry — wholesome and earthy",
   },
   {
     id: "gujarati_kadhi",
@@ -1105,7 +1212,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "curd", "everyday"],
-    note: "Sweet-tangy yogurt kadhi, best with plain rice",
+    ingredients: "દહીં, ચણાનો લોટ, ગોળ, આદુ, મરચાં, લીમડો, ઘી",
+    note: "Sweet-tangy yogurt kadhi — best with plain rice",
   },
   {
     id: "tameta_kadhi",
@@ -1115,7 +1223,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "curd", "everyday"],
-    note: "Tomato-based kadhi, a lighter, tangier variation",
+    ingredients: "દહીં, ચણાનો લોટ, ટામેટાં, રાઈ, જીરું, ઘી",
+    note: "Tomato-based kadhi — a lighter, tangier variation",
   },
   {
     id: "vaal_dal",
@@ -1125,7 +1234,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["heavy", "satvic", "vaal", "everyday"],
-    note: "Field beans dal, a bold, earthy Gujarati staple",
+    ingredients: "વાલના દાણા, ગોળ, રાઈ, જીરું, લસણ, તેલ",
+    note: "Field beans dal — a bold, earthy Gujarati staple",
   },
   {
     id: "masoor_dal",
@@ -1135,7 +1245,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "masoor", "everyday"],
-    note: "Red lentil dal, quick to cook, easy to love",
+    ingredients: "મસૂરની દાળ, ડુંગળી, ટામેટાં, લસણ, તેલ",
+    note: "Red lentil dal — quick to cook, easy to love",
   },
   {
     id: "chana_dal_tadka",
@@ -1145,6 +1256,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [6],
     tags: ["heavy", "satvic", "chana", "ghee", "everyday"],
+    ingredients: "ચણાની દાળ, ડુંગળી, ટામેટાં, લસણ, સૂકા મરચાં, ઘી",
     note: "Split chickpea dal with a generous ghee temper",
   },
   {
@@ -1155,7 +1267,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "moong", "everyday"],
-    note: "Whole sprouted moong curry, light and very satvic",
+    ingredients: "ફણગાવેલા મગ, રાઈ, હળદર, લીંબુ, મીઠું, તેલ",
+    note: "Whole sprouted moong curry — light and very satvic",
   },
   {
     id: "masala_bhaat",
@@ -1165,7 +1278,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["satvic", "grain", "festive", "everyday"],
-    note: "Spiced rice with whole garam masala, fragrant and festive",
+    ingredients: "ચોખા, શાકભાજી, આખા મસાલા, હળદર, તેલ",
+    note: "Spiced rice with whole garam masala — fragrant and festive",
   },
   {
     id: "lemon_rice",
@@ -1175,6 +1289,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "grain", "everyday"],
+    ingredients: "ચોખા, લીંબુ, મગફળી, રાઈ, લીમડો, હળદર, તેલ",
     note: "Tangy turmeric rice with mustard and curry leaves",
   },
   {
@@ -1185,7 +1300,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "cooling", "curd", "grain", "everyday"],
-    note: "Curd rice, cooling, simple, and deeply satisfying",
+    ingredients: "ચોખા, દહીં, રાઈ, લીમડો, અડદની દાળ, આદુ",
+    note: "Curd rice — cooling, simple, and deeply satisfying",
   },
   {
     id: "jeera_rice",
@@ -1195,7 +1311,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "grain", "everyday"],
-    note: "Cumin-tempered rice, the perfect neutral base",
+    ingredients: "બાફેલા ચોખા, જીરું, ઘી, મીઠું",
+    note: "Cumin-tempered rice — the perfect neutral base",
   },
   {
     id: "veg_pulao",
@@ -1205,7 +1322,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["satvic", "grain", "everyday"],
-    note: "Vegetable pulao, lightly spiced, aromatic",
+    ingredients: "ચોખા, વટાણા, ગાજર, ફ્લાવર, ગરમ મસાલો, ઘી",
+    note: "Vegetable pulao — lightly spiced, aromatic",
   },
   {
     id: "coconut_rice",
@@ -1215,6 +1333,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "grain", "coconut", "everyday"],
+    ingredients: "ચોખા, તાજું છીણેલું કોપરું, રાઈ, લીમડો, સૂકા લાલ મરચાં, તેલ",
     note: "South-style coconut rice with curry leaves and mustard",
   },
   {
@@ -1225,7 +1344,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["heavy", "rajasic", "grain", "onion", "festive"],
-    note: "Layered spiced rice with vegetables, a celebratory dish",
+    ingredients: "ચોખા, મિશ્ર શાકભાજી, બિરયાની મસાલો, કેસર, દહીં, ડુંગળી, ઘી",
+    note: "Layered spiced rice with vegetables — a celebratory dish",
   },
   {
     id: "bhakri",
@@ -1235,7 +1355,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["heavy", "grain", "everyday"],
-    note: "Thick jowar flatbread, rustic staple of Gujarat",
+    ingredients: "જાડો ઘઉંનો લોટ, મીઠું, પાણી, ઘી",
+    note: "Thick jowar flatbread — rustic staple of Gujarat",
   },
   {
     id: "makkai_rotlo",
@@ -1245,6 +1366,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["warming", "heavy", "grain", "everyday"],
+    ingredients: "મકાઈનો લોટ, મીઠું, પાણી, માખણ",
     note: "Thick corn flatbread with a pat of white butter",
   },
   {
@@ -1255,6 +1377,7 @@ const DISHES = [
     mealTime: ["morning", "lunch"],
     excludeDays: [],
     tags: ["fried", "heavy", "grain", "root", "everyday"],
+    ingredients: "ઘઉંનો લોટ, બટાટા, ટામેટાં, મસાલા, તેલ",
     note: "Deep-fried puffed bread with potato sabzi",
   },
   {
@@ -1265,7 +1388,8 @@ const DISHES = [
     mealTime: ["morning", "lunch"],
     excludeDays: [6],
     tags: ["fried", "heavy", "rajasic", "chana", "grain", "onion", "everyday"],
-    note: "Fluffy fried bread with spiced chickpeas, indulgent",
+    ingredients: "મેંદો, દહીં, કાબુલી ચણા, ડુંગળી, ટામેટાં, છોલે મસાલો, તેલ",
+    note: "Fluffy fried bread with spiced chickpeas — indulgent",
   },
   {
     id: "phulka",
@@ -1275,7 +1399,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "grain", "everyday"],
-    note: "Thin whole wheat rotli puffed on flame, lightest flatbread",
+    ingredients: "ઝીણો ઘઉંનો લોટ, પાણી, ઘી",
+    note: "Thin whole wheat rotli puffed on flame — lightest flatbread",
   },
   {
     id: "dudhi_muthiya",
@@ -1285,7 +1410,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["steamed", "light", "satvic", "everyday"],
-    note: "Steamed bottle gourd dumplings, wholesome and light",
+    ingredients: "દૂધી, ઘઉંનો કકરો લોટ, ચણાનો લોટ, મેથીની ભાજી, મસાલા, તેલ",
+    note: "Steamed bottle gourd dumplings — wholesome and light",
   },
   {
     id: "basundi",
@@ -1295,6 +1421,7 @@ const DISHES = [
     mealTime: ["morning", "snack", "lunch"],
     excludeDays: [],
     tags: ["heavy", "dairy", "festive"],
+    ingredients: "દૂધ, ખાંડ, એલચી, ચારોળી, કેસર, બદામ-પિસ્તા",
     note: "Reduced sweetened milk with saffron and cardamom",
   },
   {
@@ -1306,7 +1433,8 @@ const DISHES = [
     excludeDays: [],
     months: [4, 5, 6],
     tags: ["heavy", "cooling", "curd", "mango", "festive"],
-    note: "Mango shrikhand, only when Alphonso mangoes are in season",
+    ingredients: "મસ્કો દહીં, કેરીનો રસ, ખાંડ, એલચી",
+    note: "Mango shrikhand — only when Alphonso mangoes are in season",
   },
   {
     id: "churma_ladoo",
@@ -1316,7 +1444,8 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["warming", "heavy", "ghee", "grain", "jaggery", "festive"],
-    note: "Ghee-rich whole wheat balls, energy-dense and festive",
+    ingredients: "ઘઉંનો કકરો લોટ, ગોળ, ઘી, ખસખસ, એલચી",
+    note: "Ghee-rich whole wheat balls — energy-dense and festive",
   },
   {
     id: "shakarpara",
@@ -1326,7 +1455,8 @@ const DISHES = [
     mealTime: ["snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "grain", "jaggery", "festive"],
-    note: "Sweet diamond-shaped fried biscuits, Diwali favourite",
+    ingredients: "મેંદો અથવા ઘઉંનો લોટ, ખાંડ, ઘી, તેલ",
+    note: "Sweet diamond-shaped fried biscuits — Diwali favourite",
   },
   {
     id: "jalebi",
@@ -1336,6 +1466,7 @@ const DISHES = [
     mealTime: ["morning", "snack"],
     excludeDays: [],
     tags: ["fried", "heavy", "festive", "everyday"],
+    ingredients: "મેંદો, ખાંડની ચાસણી, કેસર, તેલ",
     note: "Crispy spiral sweets soaked in sugar syrup",
   },
   {
@@ -1346,7 +1477,8 @@ const DISHES = [
     mealTime: ["morning", "lunch"],
     excludeDays: [],
     tags: ["heavy", "dairy", "grain", "festive"],
-    note: "Saffron rice pudding slow-cooked in milk, festive dessert",
+    ingredients: "દૂધ, બાસમતી ચોખા, ખાંડ, એલચી, ચારોળી, કેસર",
+    note: "Saffron rice pudding slow-cooked in milk — festive dessert",
   },
   {
     id: "kadhi_pakoda",
@@ -1356,7 +1488,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["fried", "heavy", "curd", "chana", "everyday"],
-    note: "Besan fritters dunked in yogurt kadhi, hearty and warming",
+    ingredients: "દહીં, ચણાનો લોટ, ડુંગળીના ભજિયા, આદુ, મરચાં, ઘી",
+    note: "Besan fritters dunked in yogurt kadhi — hearty and warming",
   },
   {
     id: "mix_veg",
@@ -1366,7 +1499,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["satvic", "everyday"],
-    note: "Seasonal vegetables together, a wholesome everyday shaak",
+    ingredients: "બટાટા, વટાણા, ગાજર, ફ્લાવર, કેપ્સિકમ, ટામેટાં, મસાલા, તેલ",
+    note: "Seasonal vegetables together — a wholesome everyday shaak",
   },
   {
     id: "chole",
@@ -1376,7 +1510,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [6],
     tags: ["heavy", "rajasic", "chana", "onion", "everyday"],
-    note: "Spiced chickpea curry, bold and satisfying",
+    ingredients: "કાબુલી ચણા, ડુંગળી, ટામેટાં, છોલે મસાલો, આદુ, લસણ, તેલ",
+    note: "Spiced chickpea curry — bold and satisfying",
   },
   {
     id: "rajma_chawal",
@@ -1386,7 +1521,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["heavy", "rajasic", "rajma", "grain", "onion", "everyday"],
-    note: "Kidney bean curry over steamed rice, North Indian comfort",
+    ingredients: "રાજમા, ડુંગળી, ટામેટાં, લસણ, આદુ, ગરમ મસાલો, ચોખા",
+    note: "Kidney bean curry over steamed rice — North Indian comfort",
   },
   {
     id: "dhana_dal",
@@ -1396,7 +1532,8 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["light", "satvic", "everyday"],
-    note: "Coriander-tempered lentils, fragrant and light",
+    ingredients: "ધાણાની દાળ, રાઈ, હળદર, હિંગ, તેલ",
+    note: "Coriander-tempered lentils — fragrant and light",
   },
   {
     id: "stuffed_capsicum",
@@ -1406,6 +1543,7 @@ const DISHES = [
     mealTime: ["lunch", "dinner"],
     excludeDays: [],
     tags: ["satvic", "dairy", "everyday"],
+    ingredients: "કેપ્સિકમ, બાફેલા બટાટા, પનીર, ડુંગળી, ગરમ મસાલો, તેલ",
     note: "Capsicum filled with spiced paneer or potato stuffing",
   },
 ];
